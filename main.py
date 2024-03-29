@@ -27,7 +27,7 @@ price = float(price_line.getText().replace("$", ""))
 if price <= THRESHOLD_PRICE:
     with smtplib.SMTP("smtp.gmail.com") as connection:
         connection.starttls()
-        connection.login("pythonsurbhi@gmail.com", "jvvw flxz slvt ysly")
+        connection.login("pythonsurbhi@gmail.com", "SECRET KEY")
         connection.sendmail(
                 from_addr="pythonsurbhi@gmail.com",
                 to_addrs="sonisurbhi2003@gmail.com",
